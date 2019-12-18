@@ -1,0 +1,7 @@
+PROJECT(main)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+include_directories(math)
+add_subdirectory(math)
+ADD_EXECUTABLE(main ${DIR_SRCS})
+TARGET_LINK_LIBRARIES( main MATH)
