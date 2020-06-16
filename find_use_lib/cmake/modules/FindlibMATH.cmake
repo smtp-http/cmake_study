@@ -2,10 +2,10 @@ MESSAGE(STATUS "Using bundled Findlibmath.cmake...")
 FIND_PATH(
 	LIBMATH_INCLUDE_DIR
 	MathFunctions.h
-	/home/kevinzu/data/include/  
+	${CMAKE_SOURCE_DIR}/include/  
 )
  
 FIND_LIBRARY(
 	LIBMATH_LIBRARIES NAMES  math
-	PATHS /home/kevinzu/data/lib
+	PATHS ${CMAKE_SOURCE_DIR}/lib
 )
