@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "MathFunctions.h"
 
+extern void test();
+
 int main(int argc, char *argv[])
 {
     if(argc < 3)
@@ -14,6 +16,7 @@ int main(int argc, char *argv[])
     int exponent = atoi(argv[2]);
     double result = power(base, exponent);
     printf("%g ^ %d is %g\n", base, exponent, result);
-
+	
+	test();
     return 0;
 }
